@@ -15,6 +15,8 @@ struct ListNode {
 //space complexity : O(1)
 
 bool hasCycle(ListNode *head) {
+        if(head == NULL) return false;
+        
         ListNode* slow = head;
         ListNode* fast = head;
 
