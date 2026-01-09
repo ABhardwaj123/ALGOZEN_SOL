@@ -4,6 +4,10 @@
 #include <climits>
 using namespace std;
 
+ //maximum area of island
+ //Time Complexity :  O(n*m) {one for scanning all grid in the main function , one for bfs(worst case)}
+ //Space Complexity :  O(n * m) {visited matrix and queue{worst case}}
+
 void bfs(vector<vector<int>>& visited , int row , int col , vector<vector<int>>& grid , int rows , int cols , int& area){
         visited[row][col] = 1;
 
